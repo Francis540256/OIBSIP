@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Hood | Student Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-container">
+
+        <a href="index.html" class="site-logo" aria-label="Learning Hood home">
+            learning hood
+        </a>
+
+        <button
+            class="mobile-menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="main-navigation"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="main-navigation" id="main-navigation" aria-label="Main navigation">
+            <ul class="navigation-list">
+                <li class="navigation-item">
+                    <a href="#home" class="navigation-link">Home</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#features" class="navigation-link">Features</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#how-it-works" class="navigation-link">How It Works</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="login.html" class="navigation-link login-action">Login</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="register.html" class="navigation-link register-action">Register</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+    <section class="hero-section" id="home">
+        <div class="hero-container">
+
+            <div class="hero-content">
+                <p class="hero-eyebrow">YOUR CAMPUS. YOUR TIME. YOUR GROWTH.</p>
+
+                <h1 class="hero-title">
+                    Your student life, organized in one hub.
+                </h1>
+
+                <p class="hero-description">
+                    Learning Hood helps students manage their campus time,
+                    track academic progress, connect with other students,
+                    and develop practical skills for the future.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="register.html" class="primary-button">
+                        Get Started
+                    </a>
+
+                    <a href="#how-it-works" class="secondary-button">
+                        See How It Works
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-summary">
+
+                <div class="dashboard-preview">
+
+                    <div class="dashboard-topbar">
+                        <div>
+                            <span class="dashboard-label">STUDENT HUB</span>
+                            <h2>Student Dashboard</h2>
+                        </div>
+
+                        <span class="dashboard-status">
+                            Active
+                        </span>
+                    </div>
+
+                    <div class="dashboard-welcome">
+                        <div>
+                            <span>Good afternoon</span>
+                            <h3>Welcome back, Student</h3>
+                        </div>
+
+                        <span class="dashboard-date">
+                            Today
+                        </span>
+                    </div>
+
+                    <div class="dashboard-summary-grid">
+
+                        <article class="dashboard-summary-card">
+                            <span class="summary-label">Today's Hours</span>
+                            <strong>6.5 hrs</strong>
+                            <span class="summary-detail">Campus activity</span>
+                        </article>
+
+                        <article class="dashboard-summary-card">
+                            <span class="summary-label">Tasks</span>
+                            <strong>8</strong>
+                            <span class="summary-detail">5 completed</span>
+                        </article>
+
+                        <article class="dashboard-summary-card">
+                            <span class="summary-label">CGPA</span>
+                            <strong>3.47</strong>
+                            <span class="summary-detail">Current progress</span>
+                        </article>
+
+                        <article class="dashboard-summary-card">
+                            <span class="summary-label">Skills</span>
+                            <strong>4</strong>
+                            <span class="summary-detail">In development</span>
+                        </article>
+
+                    </div>
+
+                    <div class="dashboard-search-area">
+                        <label for="dashboard-search">
+                            Search your student hub
+                        </label>
+
+                        <div class="dashboard-search-box">
+                            <input
+                                type="search"
+                                id="dashboard-search"
+                                placeholder="Search activities, goals or resources"
+                                aria-label="Search activities, goals or resources"
+                            >
+
+                            <button
+                                type="button"
+                                class="dashboard-search-button"
+                            >
+                                Search
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-panels">
+
+                        <div class="dashboard-panel">
+
+                            <div class="dashboard-panel-heading">
+                                <div>
+                                    <span class="dashboard-label">PLAN</span>
+                                    <h3>Today's Schedule</h3>
+                                </div>
+
+                                <span>3 activities</span>
+                            </div>
+
+                            <ul class="dashboard-list">
+
+                                <li>
+                                    <div>
+                                        <strong>Study Session</strong>
+                                        <span>10:00 AM - 12:00 PM</span>
+                                    </div>
+
+                                    <span class="dashboard-tag">
+                                        Study
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <div>
+                                        <strong>Group Discussion</strong>
+                                        <span>2:00 PM - 3:00 PM</span>
+                                    </div>
+
+                                    <span class="dashboard-tag">
+                                        Team
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <div>
+                                        <strong>Skill Practice</strong>
+                                        <span>5:00 PM - 6:00 PM</span>
+                                    </div>
+
+                                    <span class="dashboard-tag">
+                                        Growth
+                                    </span>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="dashboard-panel">
+
+                            <div class="dashboard-panel-heading">
+                                <div>
+                                    <span class="dashboard-label">TOOLS</span>
+                                    <h3>Quick Actions</h3>
+                                </div>
+
+                                <span>Student tools</span>
+                            </div>
+
+                            <div class="dashboard-action-grid">
+
+                                <a
+                                    href="cgpa-calculator.html"
+                                    class="dashboard-action-button"
+                                >
+                                    CGPA Calculator
+                                </a>
+
+                                <a
+                                    href="#features"
+                                    class="dashboard-action-button"
+                                >
+                                    Track Time
+                                </a>
+
+                                <a
+                                    href="#community"
+                                    class="dashboard-action-button"
+                                >
+                                    Connect
+                                </a>
+
+                                <a
+                                    href="#how-it-works"
+                                    class="dashboard-action-button"
+                                >
+                                    View Goals
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="dashboard-appointments">
+
+                        <div>
+                            <span class="dashboard-label">
+                                CAMPUS SUPPORT
+                            </span>
+
+                            <h3>
+                                Need help with your next step?
+                            </h3>
+                        </div>
+
+                        <a
+                            href="#community"
+                            class="dashboard-appointment-button"
+                        >
+                            View Appointments
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="student-challenge-section" id="student-challenges">
+        <div class="content-container">
+
+            <div class="section-heading">
+                <p class="section-eyebrow">THE STUDENT CHALLENGE</p>
+
+                <h2>
+                    Campus life can become difficult to manage.
+                </h2>
+
+                <p>
+                    Students often balance classes, assignments, personal
+                    responsibilities, social activities, skill development,
+                    and future career goals at the same time.
+                </p>
+            </div>
+
+            <div class="challenge-grid">
+
+                <article class="challenge-card">
+                    <h3>Too much to remember</h3>
+                    <p>
+                        Important tasks, deadlines, classes, and activities
+                        can become scattered across different places.
+                    </p>
+                </article>
+
+                <article class="challenge-card">
+                    <h3>Time gets away</h3>
+                    <p>
+                        Without a clear view of your day, it can be difficult
+                        to know where your time is going.
+                    </p>
+                </article>
+
+                <article class="challenge-card">
+                    <h3>Growth gets delayed</h3>
+                    <p>
+                        Learning new skills and preparing for opportunities
+                        can be pushed aside by daily responsibilities.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="solution-content">
+
+                <p class="section-eyebrow">
+                    A COMPLETE SOLUTION
+                </p>
+
+                <h2>
+                    Turn scattered student life into a clear plan.
+                </h2>
+
+                <ol class="solution-steps">
+                    <li>
+                        <strong>Organize:</strong>
+                        Bring important campus activities and priorities
+                        into one place.
+                    </li>
+
+                    <li>
+                        <strong>Track:</strong>
+                        Monitor your time and keep an eye on your progress.
+                    </li>
+
+                    <li>
+                        <strong>Connect:</strong>
+                        Communicate with other students and learn from
+                        your campus community.
+                    </li>
+
+                    <li>
+                        <strong>Develop:</strong>
+                        Make room for practical skills that can help you
+                        succeed beyond university.
+                    </li>
+                </ol>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="features-section" id="features">
+        <div class="content-container">
+
+            <div class="section-heading">
+                <p class="section-eyebrow">
+                    EVERYTHING IN ONE PLACE
+                </p>
+
+                <h2>
+                    Tools built around student life.
+                </h2>
+
+                <p>
+                    Learning Hood brings useful student-focused features
+                    together so you can spend less time figuring things out
+                    and more time making progress.
+                </p>
+            </div>
+
+            <div class="features-grid">
+
+                <article class="feature-card">
+                    <h3>Time Tracking</h3>
+                    <p>
+                        Keep track of campus activities and understand
+                        how you are using your time.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Student Dashboard</h3>
+                    <p>
+                        See activities, progress, goals, and useful student
+                        information from one dashboard.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Skill Development</h3>
+                    <p>
+                        Stay motivated to learn practical skills that
+                        support your academic and career journey.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Student Communication</h3>
+                    <p>
+                        Communicate, share ideas, and build connections
+                        with other students.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Campus Planning</h3>
+                    <p>
+                        Organize priorities and create a clearer path
+                        through your daily campus activities.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Progress Tracking</h3>
+                    <p>
+                        Follow your goals and recognize the progress you
+                        make throughout your student journey.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="how-it-works-section" id="how-it-works">
+        <div class="content-container">
+
+            <div class="section-heading">
+                <p class="section-eyebrow">
+                    HOW IT WORKS
+                </p>
+
+                <h2>
+                    Start simple and build from there.
+                </h2>
+
+                <p>
+                    Learning Hood is designed to make managing student
+                    life straightforward.
+                </p>
+            </div>
+
+            <div class="process-grid">
+
+                <article class="process-step">
+                    <span class="process-number">01</span>
+
+                    <h3>Create your account</h3>
+
+                    <p>
+                        Register for Learning Hood and create your
+                        student profile.
+                    </p>
+                </article>
+
+                <article class="process-step">
+                    <span class="process-number">02</span>
+
+                    <h3>Set your priorities</h3>
+
+                    <p>
+                        Add activities, goals, and areas of student life
+                        that matter most to you.
+                    </p>
+                </article>
+
+                <article class="process-step">
+                    <span class="process-number">03</span>
+
+                    <h3>Track your journey</h3>
+
+                    <p>
+                        Monitor time, activities, progress, communication,
+                        and development.
+                    </p>
+                </article>
+
+                <article class="process-step">
+                    <span class="process-number">04</span>
+
+                    <h3>Keep improving</h3>
+
+                    <p>
+                        Review progress, develop new skills, connect with
+                        students, and keep moving forward.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cgpa-section" id="cgpa-calculator">
+        <div class="content-container">
+
+            <div class="cgpa-content">
+                <p class="section-eyebrow">
+                    ACADEMIC SUPPORT
+                </p>
+
+                <h2>
+                    Calculate and understand your CGPA.
+                </h2>
+
+                <p>
+                    Use the Learning Hood CGPA calculator to organize
+                    your course results and get a clearer picture of
+                    your academic progress.
+                </p>
+
+                <a
+                    href="cgpa-calculator.html"
+                    class="primary-button"
+                >
+                    Open CGPA Calculator
+                </a>
+            </div>
+
+            <div class="cgpa-summary-card">
+                <span class="dashboard-label">
+                    ACADEMIC PROGRESS
+                </span>
+
+                <h3>
+                    Plan with better information
+                </h3>
+
+                <p>
+                    Keep your academic progress visible while you work
+                    toward your next academic goal.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="community-cta-section" id="community">
+        <div class="content-container">
+
+            <div class="cta-content">
+
+                <p class="section-eyebrow">
+                    LEARN. CONNECT. BUILD.
+                </p>
+
+                <h2>
+                    Campus life should be more than just attending classes.
+                </h2>
+
+                <p>
+                    Learning Hood gives students a place to communicate,
+                    discover new interests, develop useful skills, manage
+                    their time, and prepare for opportunities ahead.
+                </p>
+
+                <div class="cta-actions">
+                    <a
+                        href="register.html"
+                        class="primary-button"
+                    >
+                        Create Your Account
+                    </a>
+
+                    <a
+                        href="login.html"
+                        class="secondary-button"
+                    >
+                        Login
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="site-logo">
+                learning hood
+            </a>
+
+            <p>
+                A student hub for managing time, tracking progress,
+                connecting, and developing skills on campus.
+            </p>
+
+        </div>
+
+        <nav class="footer-navigation" aria-label="Footer navigation">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#cgpa-calculator">CGPA Calculator</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; 2026 Learning Hood. All rights reserved.
+            </p>
+        </div>
+
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
